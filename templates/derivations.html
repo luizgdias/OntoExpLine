@@ -1,0 +1,52 @@
+{%extends "base.html"%}
+{%block title%}Home Page{%endblock%}
+{%block content%}
+<div class="container" >
+    <div class="row" style="padding-top: 2%;">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist" style="font-size: 10pt;">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                    By Alignment Programs
+                    <span class="badge badge-primary badge-pill" style="float: right">9</span>
+                </a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                    By Tree Generator Programs
+                    <span class="badge badge-primary badge-pill" style="float: right">5</span>
+                </a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                    By Attributes
+                    <span class="badge badge-primary badge-pill" style="float: right">2</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-8 border">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    Information about derivations Alignment-Programs-Based
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    Information about derivations Tree-Generators-Programs-Based
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    Information about derivations Attributes-Based
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home-list" role="tabpanel" aria-labelledby="list-home" data-toggle="list">
+               aaaa
+            </div>
+            <div class="tab-pane fade" id="list-profile-list" role="tabpanel" aria-labelledby="list-profile" data-toggle="list">
+                11111
+            </div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                123rivations Attributes-Based
+            </div>
+          </div>
+
+    </div>
+</div>
+
+{%endblock%}

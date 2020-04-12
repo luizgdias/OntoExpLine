@@ -3,166 +3,107 @@
 {%block content%}
 
 <br>
-<!-- <form>
-    <div class="form-group row">
-      <label for="inputEmail3" class="col-sm-4 col-form-label">Domain Ontology Name:</label>
-      <div class="col-sm-8">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Ontology Name">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="inputPassword3" class="col-sm-4 col-form-label">Super Classes Quantity:</label>
-      <div class="col-sm-8">
-        <input type="number" class="form-control" id="inputPassword3" placeholder="Number of Super Classes">
-      </div>
-    </div>
-    <div class="form-group row">
-      <div class="col-sm-4">DCMI Attributes:</div>
-      <div class="col-sm-4">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Identifier
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Title
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Creator
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Contributor
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Publisher
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Subject
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Description
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Coverage
-          </label>
-        </div>
-      </div>
-
-
-      <div class="col-sm-4">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Format
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Type
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Date
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Relation
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Source
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Rights
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-            Language
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group row">
-      <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">Add to OntoExpLine</button>
-      </div>
-    </div>
-  </form> -->
   <div class="row">
     <div class="col-md-3">
       {%for i in result[0]%}
       <div class="dropdown show dropright" >
         <a class="btn btn-secondary dropdown-toggle btn-sm btn-info" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="min-width: 150px; font-size: 10px; margin-bottom: 1px;">
-          {{i}}
+          {{i.getName()}}
         </a>
       
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="font-size: 8pt;  width:300pt;">
+          <a class="dropdown-item" href="#" style="white-space: normal;" >Definition: {{i.getComment()}}</a>
+          <a class="dropdown-item" href="#" style="white-space: normal;">Is a: 
+            <ul>
+              {%for x in (i.getIs_a())%}
+                <li>{{x}}</li>
+              {%endfor%}
+            </ul>
+          </a>
+          <a class="dropdown-item" href="#" style="white-space: normal;">Applicable Properties: 
+            <ul>
+              {%for x in (i.getSeeAlso())%}
+                <li>{{x}}</li>
+              {%endfor%}
+            </ul>
+          </a>
+          <a class="dropdown-item" href="#" style="white-space: normal;">SciPhy Instances:
+            <ul>
+              {%for x in (i.getIndividuals())%}
+                <li>{{x}}</li>
+              {%endfor%}
+            </ul>
+          </a>
         </div>
-  </div>
-  {%endfor%}
+      </div>
+    {%endfor%}
+
     </div>
     <div class="col-md-3">
       {%for i in result[1]%}
       <div class="dropdown show dropright" >
           <a class="btn btn-secondary dropdown-toggle btn-sm btn-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="min-width: 150px; font-size: 10px; margin-bottom: 1px;">
-            {{i}}
+            {{i.getName()}}
           </a>
         
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="font-size: 8pt;  width:300pt;">
+            <a class="dropdown-item" href="#" style="white-space: normal;" >Definition: {{i.getComment()}}</a>
+            <a class="dropdown-item" href="#" style="white-space: normal;" >Is a: 
+              <ul>
+                {%for x in (i.getIs_a())%}
+                  <li>{{x}}</li>
+                {%endfor%}
+              </ul>
+            </a>
+            <a class="dropdown-item" href="#" style="white-space: normal;">Applicable Properties: 
+              <ul>
+                {%for x in (i.getSeeAlso())%}
+                  <li>{{x}}</li>
+                {%endfor%}
+              </ul>
+            </a>
+            <a class="dropdown-item" href="#" style="white-space: normal;" >SciPhy Instances:
+              <ul>
+                {%for x in (i.getIndividuals())%}
+                  <li>{{x}}</li>
+                {%endfor%}
+              </ul>
+            </a>
           </div>
       </div>
-{%endfor%}
+      {%endfor%}
 
     </div>
     <div class="col-md-3">
       {%for i in result[2]%}
         <div class="dropdown show dropright" >
-            <a class="btn btn-secondary dropdown-toggle btn-sm btn-dark" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="min-width: 160px; font-size: 10px; margin-bottom: 1px;">
-              {{i}}
+            <a class="btn btn-secondary dropdown-toggle btn-sm btn-dark" href="#info" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="min-width: 160px; font-size: 10px; margin-bottom: 1px;">
+              {{i.getName()}}
             </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+            
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="font-size: 8pt;  width:300pt;">
+              <a class="dropdown-item" href="#" style="white-space: normal;" >Definition: {{i.getComment()}}</a>
+              <a class="dropdown-item" href="#" style="white-space: normal;" >Is a: 
+                <ul>
+                  {%for x in (i.getIs_a())%}
+                    <li>{{x}}</li>
+                  {%endfor%}
+                </ul>
+              </a>
+              <a class="dropdown-item" href="#" style="white-space: normal;">Applicable Properties: 
+                <ul>
+                  {%for x in (i.getSeeAlso())%}
+                    <li>{{x}}</li>
+                  {%endfor%}
+                </ul>
+              </a>
+              <a class="dropdown-item" href="#" style="white-space: normal;" >SciPhy Instances: 
+                <ul>
+                {%for x in (i.getIndividuals())%}
+                  <li>{{x}}</li>
+                {%endfor%}
+                </ul>
+              </a>
             </div>
         </div>
       {%endfor%}
@@ -171,14 +112,28 @@
     <div class="col-md-3">
       {%for i in result[3]%}
       <div class="dropdown show dropright" >
-          <a class="btn btn-secondary dropdown-toggle btn-sm btn-success" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="min-width: 120px; font-size: 10px; margin-bottom: 1px;">
-            {{i}}
+          <a class="btn btn-secondary dropdown-toggle btn-sm btn-success" href="#Information" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="min-width: 120px; font-size: 10px; margin-bottom: 1px;">
+            {{i.getName()}}
           </a>
         
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="font-size: 8pt;  width:300pt;">
+            <a class="dropdown-item" href="#" style="white-space: normal;" >Definition: {{i.getComment()}}</a>
+            <a class="dropdown-item" href="#" style="white-space: normal;" >Is a: 
+              <ul>
+                {%for x in (i.getIs_a())%}
+                  <li>{{x}}</li>
+                {%endfor%}
+              </ul>
+            </a>
+            <a class="dropdown-item" href="#" style="white-space: normal;">Applicable Properties: 
+              <ul>
+                {%for x in (i.getSeeAlso())%}
+                  <li>{{x}}</li>
+                {%endfor%}
+              </ul>
+            </a>
+            <a class="dropdown-item" href="#" style="white-space: normal;" >SciPhy Instances: {{i.getIndividuals()}}</a>
+            
           </div>
       </div>
       {%endfor%}

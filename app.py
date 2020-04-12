@@ -1,6 +1,7 @@
 from flask import Flask, redirect, url_for, render_template
 from owlready2 import *
 from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
+from individualDTO import Individual
 
 app = Flask(__name__)
 
@@ -25,32 +26,84 @@ def ontoexpline():
 def contact():
     return render_template("contact.html", content="")
 
+@app.route("/derivations.html")
+def derivations():
+    return render_template("derivations.html")
 
 def ontologyStructure():
-    onto = get_ontology("ontology.owl")
+    onto = get_ontology("ontoexpline.owl")
     onto.load() 
-    print("*****************")
-
 
     # imprimindo instancias de uma classe
     # for i in onto.ProvOne.instances(): print(i)
-    print(onto.ProvOneData.is_a)
-    print("*****************")
+    # print(onto.ProvOneData.is_a)
+
 
     ontoexpline = [[],[],[],[]]
-    for i in list(onto.classes()):
-        if "ProvOne:" in str(i):
-            i_replaced =str(i).replace("ontology.", "")
-            ontoexpline[0].append(i_replaced)
-        if "ExpLine" in str(i):
-            i_replaced =str(i).replace("ontology.", "")
-            ontoexpline[1].append(i_replaced)
-        if "EDAM" in str(i):
-            i_replaced =str(i).replace("ontology.", "")
-            ontoexpline[2].append(i_replaced)
-        if "DCMI" in str(i):
-            i_replaced =str(i).replace("ontology.", "")
-            ontoexpline[3].append(i_replaced)
+    # ontoexplineEntity = []
+
+    for item in onto.classes():
+        # print(item, item.is_a)
+        if(((onto.ProvOne) in list(item.is_a)) or ((onto.Entity) in list(item.is_a)) or ((onto.Program) in list(item.is_a))):
+            comments = ''
+            for x in item.comment:
+                comments = comments+x
+            
+            individualsList     = item.instances()
+            propertiesList      = item.seeAlso
+            if(len(propertiesList) == 0): propertiesList = "-"
+            if(len(individualsList) == 0): individualsList = "-"
+            isaList             = item.is_a
+            ontoExpLineClass    = Individual(str(item).replace("ontoexpline.", ""), comments, isaList, propertiesList, individualsList)
+            ontoexpline[0].append(ontoExpLineClass)
+        
+
+        if(((onto.Experiment_Line) in list(item.is_a)) or ((onto.Type) in list(item.is_a)) or ((onto.Activity_Type) in list(item.is_a))):
+            comments = ''
+            for x in item.comment:
+                comments = comments+x
+
+            individualsList     = item.instances()
+            propertiesList      = item.seeAlso
+            isaList             = item.is_a
+
+            if(len(propertiesList) == 0): propertiesList = "-"
+            if(len(individualsList) == 0): individualsList = "-"
+
+            ontoExpLineClass = Individual(str(item).replace("ontoexpline.", ""), comments, isaList, propertiesList, individualsList)
+            ontoexpline[1].append(ontoExpLineClass)
+
+        if(((onto.Program_Type) in list(item.is_a))):
+            comments = ''
+            for x in item.comment:
+                comments = comments+x
+            
+            individualsList     = item.instances()
+            propertiesList      = item.seeAlso
+            isaList             = item.is_a
+
+            if(len(propertiesList) == 0): propertiesList = "-"
+            if(len(individualsList) == 0): individualsList = "-"
+
+            ontoExpLineClass = Individual(str(item).replace("ontoexpline.", ""), comments, isaList, propertiesList, individualsList)
+            ontoexpline[2].append(ontoExpLineClass)
+
+        
+        if(((onto.Metadata) in list(item.is_a))):
+            comments = ''
+            for x in item.comment:
+                comments = comments+x
+            
+            individualsList     = item.instances()
+            propertiesList      = item.seeAlso
+            isaList             = item.is_a
+
+            if(len(propertiesList) == 0): propertiesList = "-"
+            if(len(individualsList) == 0): individualsList = "-"
+
+            ontoExpLineClass = Individual(str(item).replace("ontoexpline.", ""), comments, isaList, propertiesList, individualsList)
+            ontoexpline[3].append(ontoExpLineClass)
+
     return ontoexpline
 # verifica se o user está executando o arquivo principal
 if __name__ == "__main__":

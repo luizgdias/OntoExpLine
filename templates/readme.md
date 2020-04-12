@@ -9,7 +9,10 @@ Using OntoExpLine is possible to relate different kind of data and provenance, a
 
 ## Introduction
 
-Scientific experiments involve several combinations of data and abstract activities on the flow. Besides this, there are a lot of equivalences in the concrete workflow implementation process because an abstract activity can be implemented by different concrete programs, and these programs can consume and generate different datasets. In addition, the systems that perform workflows do not associate variations of these activities as the knowledge used to create the variations are often not explicit and comes from specialists involved in the development of the experiment.
+Scientific experiments involve several combinations of data and abstract activities on the flow. Besides this, there are many equivalences in the workflow construct process because different concrete programs can implement an abstract activity, and these programs can consume and generate different resources. However necessary, derive workflows is an intricate work because abstract tasks, concrete programs, and their compatibilities should be defined and connected to compose the flow variations. Based on this, apply formal models can help scientists to derive the workflow in an experiment line set. This kind of model gives support to scientists to realize different kinds of verifications to confirm or refute a scientific hypothesis, applying inference  mechanisms such as reasoners.
+
+This document presents OntoExpLine, a model for Experiment Lines that aims to give support in workflow derivation processes. The ontology is the result of the integration of different task and domain ontologies: ProveONE, Experiment Line approach proposed by Ogasawara et al., 2009, DCMI and EDAM branches.
+
 
 ## Aspect covered by OntoExpLine
 (tipos de dados relacionados - workflow, linha de experimento, metadados, domínio, tabela de classes e propriedades)
