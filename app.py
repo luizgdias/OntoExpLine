@@ -2,6 +2,7 @@ from flask import Flask, redirect, url_for, render_template
 from owlready2 import *
 from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
 from individualDTO import Individual
+from abstractActivityDTO import AbstractActivity
 
 app = Flask(__name__)
 
@@ -28,22 +29,49 @@ def contact():
 
 @app.route("/derivations.html")
 def derivations():
-    return render_template("derivations.html")
+    onto = get_ontology("ontoexpline.owl")
+    onto.load() 
+
+    result = onto.get_instances_of(onto.Abstract_activity)
+    programsInstances = onto.get_instances_of(onto.Program)
+    result_replaced = []
+    objectList = []
+    programList = []
+    # print(programsInstances)
+    for i in result:
+        abstractActivityDTO = AbstractActivity('', '', '', '', '')
+        abstractActivityDTO.setName(i)
+        if(onto.Variant in i.is_a):
+            abstractActivityDTO.setActivityType(onto.Variant)
+        if(onto.Mandatory in i.is_a):
+            abstractActivityDTO.setActivityType(onto.Mandatory)
+        if(onto.Optionaly in i.is_a):
+            abstractActivityDTO.setActivityType(onto.Mandatory)
+        abstractActivityDTO.setInputRelations(i.hasInputRelation)
+        abstractActivityDTO.setOutputRelations(i.hasOutputRelation)
+        for program in programsInstances:
+            if (i in program.implements):
+                programList.append(program)
+            abstractActivityDTO.setImplementedBy(programList)
+        programList = []
+            # print(str(program)+' implements: ' + str(program.implements))
+
+            
+        # x = (onto.search(is_a = onto.Abstract_activity, hasInputRelation = onto.search_one(label = "r1")))
+
+        objectList.append(abstractActivityDTO)
+        i = str(i).replace("ontoexpline.","")
+        result_replaced.append(i)
+
+    return render_template("derivations.html", result = result_replaced, objectList = objectList)
 
 def ontologyStructure():
     onto = get_ontology("ontoexpline.owl")
     onto.load() 
 
-    # imprimindo instancias de uma classe
-    # for i in onto.ProvOne.instances(): print(i)
-    # print(onto.ProvOneData.is_a)
-
-
     ontoexpline = [[],[],[],[]]
-    # ontoexplineEntity = []
 
     for item in onto.classes():
-        # print(item, item.is_a)
         if(((onto.ProvOne) in list(item.is_a)) or ((onto.Entity) in list(item.is_a)) or ((onto.Program) in list(item.is_a))):
             comments = ''
             for x in item.comment:
@@ -105,6 +133,7 @@ def ontologyStructure():
             ontoexpline[3].append(ontoExpLineClass)
 
     return ontoexpline
+
 # verifica se o user está executando o arquivo principal
 if __name__ == "__main__":
     app.run(debug=True)

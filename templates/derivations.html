@@ -3,14 +3,14 @@
 {%block content%}
 <div class="container" >
     <div class="row" style="padding-top: 2%;">
-        <div class="col-4">
+        <div class="col-2">
             <div class="list-group" id="list-tab" role="tablist" style="font-size: 10pt;">
                 <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
-                    By Alignment Programs
+                    By Alignment
                     <span class="badge badge-primary badge-pill" style="float: right">9</span>
                 </a>
                 <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
-                    By Tree Generator Programs
+                    By Tree 
                     <span class="badge badge-primary badge-pill" style="float: right">5</span>
                 </a>
                 <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
@@ -19,33 +19,56 @@
                 </a>
             </div>
         </div>
-        <div class="col-8 border">
+        <div class="col-10">
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                    Information about derivations Alignment-Programs-Based
+                    <strong>Information about derivations Alignment-Programs-Based:</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum, mi quis ornare pretium, 
+                    lacus felis faucibus tortor, pellentesque dictum sem odio id neque. Suspendisse gravida orci et orci 
+                    ornare, ac facilisis est ultrices. In congue lorem ligula, nec cursus nisi hendrerit in. 
+                    Cras sit amet erat ante.</p>
+                    <table class="table table-hover" style="font-size: 8pt;">
+                        <thead>
+                          <tr>
+                            <th scope="col">Derivation</th>
+                            {%for item in objectList%}
+                            <th scope="col">{{item.getName()}} <br> ({{item.getActivityType()}})</th>
+                            {%endfor%}
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">id</th>
+                            {%for item in objectList%}
+                                <td>
+                                    In Relations:{{item.getInputRelations()}}<br>
+                                    Out Relations:{{item.getOutputRelations()}} <br>
+                                    Implement By: {{item.getImplementedBy()}}
+                            
+                                </td>
+                            {%endfor%}
+                    </tr>
+                          
+                        </tbody>
+                      </table>
+
                 </div>
                 <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                    Information about derivations Tree-Generators-Programs-Based
+                    <strong>Information about derivations Tree-Generators-Programs-Based:</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum, mi quis ornare pretium, 
+                        lacus felis faucibus tortor, pellentesque dictum sem odio id neque. Suspendisse gravida orci et orci 
+                        ornare, ac facilisis est ultrices. In congue lorem ligula, nec cursus nisi hendrerit in. 
+                        Cras sit amet erat ante.</p>
                 </div>
                 <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                    Information about derivations Attributes-Based
+                    <strong>Information about derivations Attributes-Based:</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum, mi quis ornare pretium, 
+                        lacus felis faucibus tortor, pellentesque dictum sem odio id neque. Suspendisse gravida orci et orci 
+                        ornare, ac facilisis est ultrices. In congue lorem ligula, nec cursus nisi hendrerit in. 
+                        Cras sit amet erat ante.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home-list" role="tabpanel" aria-labelledby="list-home" data-toggle="list">
-               aaaa
-            </div>
-            <div class="tab-pane fade" id="list-profile-list" role="tabpanel" aria-labelledby="list-profile" data-toggle="list">
-                11111
-            </div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                123rivations Attributes-Based
-            </div>
-          </div>
-
     </div>
 </div>
 
