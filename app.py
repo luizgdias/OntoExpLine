@@ -3,6 +3,7 @@ from owlready2 import *
 from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
 from individualDTO import Individual
 from abstractActivityDTO import AbstractActivity
+from variationsDTO import Variation
 
 app = Flask(__name__)
 
@@ -27,6 +28,23 @@ def ontoexpline():
 def contact():
     return render_template("contact.html", content="")
 
+def traceVariation(item, onto, variation):
+    x = onto.get_instances_of(onto.Program)
+    itemPort = item.hasOutPort
+
+    for portas in itemPort:
+        itemChannel = portas.connectsTo
+    
+    for i in x:
+        iPort = i.hasOutPort
+        for iPortas in iPort:
+            iChannel = iPortas.connectsTo
+
+        if (( i != item) and (itemChannel == iChannel)):
+            print(str(item)+" / "+ str(i) + " usam o mesmo canal")
+            variation.append(item)
+    return variation
+    
 @app.route("/derivations.html")
 def derivations():
     onto = get_ontology("ontoexpline.owl")
@@ -37,7 +55,7 @@ def derivations():
     result_replaced = []
     objectList = []
     programList = []
-    # print(programsInstances)
+
     for i in result:
         abstractActivityDTO = AbstractActivity('', '', '', '', '')
         abstractActivityDTO.setName(i)
@@ -54,16 +72,86 @@ def derivations():
                 programList.append(program)
             abstractActivityDTO.setImplementedBy(programList)
         programList = []
-            # print(str(program)+' implements: ' + str(program.implements))
-
-            
-        # x = (onto.search(is_a = onto.Abstract_activity, hasInputRelation = onto.search_one(label = "r1")))
-
         objectList.append(abstractActivityDTO)
-        i = str(i).replace("ontoexpline.","")
+        # i = str(i).replace("ontoexpline.","")
         result_replaced.append(i)
+    # print(result_replaced)
 
-    return render_template("derivations.html", result = result_replaced, objectList = objectList)
+    line = []
+    fonte = []
+    sumidouro = []
+    # Verifica a consistencia do relacionamento das abstract activities e monta o fluxo
+    # Fonte e a cabeça do flow, e sumidouro é a ultima atividade do flow
+    for i in objectList:
+        if(i.getInputRelations() == []):
+            fonte = i #encontrou a primeira atividade do flow
+        if(i.getOutputRelations() == []):
+            sumidouro = i #encontrou a ultima atividade do flow
+    
+    line.append(fonte)
+    #encontrando as atividades intermediárias entre a fonte e o sumidouro (comparando as relações de i/o):
+    for i_a2 in objectList:
+        if i_a2.getInputRelations() == fonte.getOutputRelations():
+            line.append(i_a2)
+            for i_a3 in objectList:
+                if i_a3.getInputRelations() == i_a2.getOutputRelations():
+                    line.append(i_a3)
+                    for i_a4 in objectList:
+                        if i_a4.getInputRelations() == i_a3.getOutputRelations():
+                            line.append(i_a4)
+    line.append(sumidouro) 
+    # line é a linha do sciphy, cabeçalho da tabela de derivações
+    act1 = onto.get_instances_of(onto.Sequencing_quality_control)
+    act2 = onto.get_instances_of(onto.Sequence_alignment_operation_0292)
+    act3 = onto.get_instances_of(onto.Sequence_alignment_conversion)
+    act4 = onto.get_instances_of(onto.Sequence_alignment_refinament)
+    act5 = onto.get_instances_of(onto.Phylogenetic_tree_generation)
+    
+    derivation = []
+    indice = []
+    i = 1
+    derivations = []
+    #para cada programa que implementa uma atividade, pegar o programa
+    for program_act1 in act1:
+        for program_act2 in act2:
+            for program_act3 in act3:
+                for program_act4 in act4:
+                    for program_act5 in act5:
+                        # após pegar o programa, pegar a porta do programa
+                        for port_out_act1 in program_act1.hasOutPort:
+                            for port_in_act2 in program_act2.hasInPort:
+                                    # após pegar as portas dos programas, verificar se elas se conectam no mesmo channel, se sim, append na derivação
+                                    if((port_out_act1.connectsTo == port_in_act2.connectsTo)):
+                                        derivation.append(program_act1)
+                                        derivation.append(program_act2)
+                                    
+                                    for port_out_act2 in program_act2.hasOutPort: 
+                                        for port_in_act3 in program_act3.hasInPort:
+                                        
+                                            if((port_out_act2.connectsTo == port_in_act3.connectsTo)):
+                                                derivation.append(program_act3)
+                                            
+                                            for port_out_act3 in program_act3.hasOutPort: 
+                                                for port_in_act4 in program_act4.hasInPort:
+
+                                                    if((port_in_act4.connectsTo == port_out_act3.connectsTo)):
+                                                        derivation.append(program_act4)
+
+                                                    for port_out_act4 in program_act4.hasOutPort: 
+                                                        for port_in_act5 in program_act5.hasInPort:
+
+                                                            if((port_out_act4.connectsTo == port_in_act5.connectsTo)):
+                                                                derivation.append(program_act5)
+                                                                derivation.insert(0, i)
+                                                    i = i+1
+                                                    derivations.append(derivation)
+                                                    indice.append(i)
+                                                    derivation = []
+                                                # print(program_act2, port_act2, port_act2.connectsTo, port_act3.connectsTo, port_act3, program_act3)
+    print(derivations)
+                
+
+    return render_template("derivations.html", result = result_replaced, objectList = line, derivations = derivations, indice = indice)
 
 def ontologyStructure():
     onto = get_ontology("ontoexpline.owl")

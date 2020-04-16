@@ -259,19 +259,19 @@
         <DataProperty IRI="#value"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Act1_Validation"/>
+        <NamedIndividual IRI="#AA_Alignment"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Act2_Alignment"/>
+        <NamedIndividual IRI="#AA_Convertion"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Act3_Convertion"/>
+        <NamedIndividual IRI="#AA_ModelSearch"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Act4_ModelSearch"/>
+        <NamedIndividual IRI="#AA_TreeGeneration"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Act5_TreeGeneration"/>
+        <NamedIndividual IRI="#AA_Validation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Aligned_Sequence"/>
@@ -624,43 +624,43 @@
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="#Abstract_activity"/>
-        <NamedIndividual IRI="#Act1_Validation"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Mandatory"/>
-        <NamedIndividual IRI="#Act1_Validation"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Abstract_activity"/>
-        <NamedIndividual IRI="#Act2_Alignment"/>
+        <NamedIndividual IRI="#AA_Alignment"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Variant"/>
-        <NamedIndividual IRI="#Act2_Alignment"/>
+        <NamedIndividual IRI="#AA_Alignment"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Abstract_activity"/>
-        <NamedIndividual IRI="#Act3_Convertion"/>
+        <NamedIndividual IRI="#AA_Convertion"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Mandatory"/>
-        <NamedIndividual IRI="#Act3_Convertion"/>
+        <NamedIndividual IRI="#AA_Convertion"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Abstract_activity"/>
-        <NamedIndividual IRI="#Act4_ModelSearch"/>
+        <NamedIndividual IRI="#AA_ModelSearch"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Mandatory"/>
-        <NamedIndividual IRI="#Act4_ModelSearch"/>
+        <NamedIndividual IRI="#AA_ModelSearch"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Abstract_activity"/>
-        <NamedIndividual IRI="#Act5_TreeGeneration"/>
+        <NamedIndividual IRI="#AA_TreeGeneration"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Variant"/>
-        <NamedIndividual IRI="#Act5_TreeGeneration"/>
+        <NamedIndividual IRI="#AA_TreeGeneration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Abstract_activity"/>
+        <NamedIndividual IRI="#AA_Validation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mandatory"/>
+        <NamedIndividual IRI="#AA_Validation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
@@ -935,44 +935,44 @@
         <NamedIndividual IRI="#r4"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasOutputRelation"/>
-        <NamedIndividual IRI="#Act1_Validation"/>
-        <NamedIndividual IRI="#r1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInputRelation"/>
-        <NamedIndividual IRI="#Act2_Alignment"/>
+        <NamedIndividual IRI="#AA_Alignment"/>
         <NamedIndividual IRI="#r1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOutputRelation"/>
-        <NamedIndividual IRI="#Act2_Alignment"/>
+        <NamedIndividual IRI="#AA_Alignment"/>
         <NamedIndividual IRI="#r2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInputRelation"/>
-        <NamedIndividual IRI="#Act3_Convertion"/>
+        <NamedIndividual IRI="#AA_Convertion"/>
         <NamedIndividual IRI="#r2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOutputRelation"/>
-        <NamedIndividual IRI="#Act3_Convertion"/>
+        <NamedIndividual IRI="#AA_Convertion"/>
         <NamedIndividual IRI="#r3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInputRelation"/>
-        <NamedIndividual IRI="#Act4_ModelSearch"/>
+        <NamedIndividual IRI="#AA_ModelSearch"/>
         <NamedIndividual IRI="#r3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOutputRelation"/>
-        <NamedIndividual IRI="#Act4_ModelSearch"/>
+        <NamedIndividual IRI="#AA_ModelSearch"/>
         <NamedIndividual IRI="#r4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInputRelation"/>
-        <NamedIndividual IRI="#Act5_TreeGeneration"/>
+        <NamedIndividual IRI="#AA_TreeGeneration"/>
         <NamedIndividual IRI="#r4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutputRelation"/>
+        <NamedIndividual IRI="#AA_Validation"/>
+        <NamedIndividual IRI="#r1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composed"/>
@@ -992,7 +992,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#implements"/>
         <NamedIndividual IRI="#Clustalw"/>
-        <NamedIndividual IRI="#Act2_Alignment"/>
+        <NamedIndividual IRI="#AA_Alignment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composed"/>
@@ -1127,7 +1127,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#implements"/>
         <NamedIndividual IRI="#Mafft"/>
-        <NamedIndividual IRI="#Act2_Alignment"/>
+        <NamedIndividual IRI="#AA_Alignment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInPort"/>
@@ -1142,7 +1142,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#implements"/>
         <NamedIndividual IRI="#ModelGen"/>
-        <NamedIndividual IRI="#Act4_ModelSearch"/>
+        <NamedIndividual IRI="#AA_ModelSearch"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInPort"/>
@@ -1157,7 +1157,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#implements"/>
         <NamedIndividual IRI="#Mrbayes"/>
-        <NamedIndividual IRI="#Act5_TreeGeneration"/>
+        <NamedIndividual IRI="#AA_TreeGeneration"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInPort"/>
@@ -1167,12 +1167,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOutPort"/>
         <NamedIndividual IRI="#Muscle"/>
-        <NamedIndividual IRI="#out_port_readseq"/>
+        <NamedIndividual IRI="#out_port_muscle"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#implements"/>
         <NamedIndividual IRI="#Muscle"/>
-        <NamedIndividual IRI="#Act2_Alignment"/>
+        <NamedIndividual IRI="#AA_Alignment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInPort"/>
@@ -1187,7 +1187,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#implements"/>
         <NamedIndividual IRI="#Raxml"/>
-        <NamedIndividual IRI="#Act5_TreeGeneration"/>
+        <NamedIndividual IRI="#AA_TreeGeneration"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInPort"/>
@@ -1202,7 +1202,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#implements"/>
         <NamedIndividual IRI="#ReadSeq"/>
-        <NamedIndividual IRI="#Act3_Convertion"/>
+        <NamedIndividual IRI="#AA_Convertion"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInPort"/>
@@ -1217,7 +1217,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#implements"/>
         <NamedIndividual IRI="#Remove_pipe"/>
-        <NamedIndividual IRI="#Act1_Validation"/>
+        <NamedIndividual IRI="#AA_Validation"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#connectsTo"/>

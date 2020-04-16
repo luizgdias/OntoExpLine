@@ -37,18 +37,18 @@
                           </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                            <th scope="row">id</th>
-                            {%for item in objectList%}
-                                <td>
-                                    In Relations:{{item.getInputRelations()}}<br>
-                                    Out Relations:{{item.getOutputRelations()}} <br>
-                                    Implement By: {{item.getImplementedBy()}}
                             
+                            {%for item in derivations%}
+                            <tr>
+                               
+                                {%for i in item%}
+                                <td>
+                                    {{i}}<br> 
                                 </td>
+                                {%endfor%}
+                            </tr>
                             {%endfor%}
-                    </tr>
-                          
+                            
                         </tbody>
                       </table>
 
