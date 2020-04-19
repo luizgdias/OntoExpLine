@@ -108,9 +108,11 @@ def derivations():
     act5 = onto.get_instances_of(onto.Phylogenetic_tree_generation)
     
     derivation = []
-    indice = []
     i = 1
     derivations = []
+    output_dataset = []
+    output_datasets = []
+    # Esse bloco é sobre gerar derivações comparando a compatibilidade dos programas
     #para cada programa que implementa uma atividade, pegar o programa
     for program_act1 in act1:
         for program_act2 in act2:
@@ -121,19 +123,16 @@ def derivations():
                         for port_out_act1 in program_act1.hasOutPort:
                             for port_in_act2 in program_act2.hasInPort:
                                     # após pegar as portas dos programas, verificar se elas se conectam no mesmo channel, se sim, append na derivação
-                                    if((port_out_act1.connectsTo == port_in_act2.connectsTo)):
-                                        derivation.append(program_act1)
-                                        derivation.append(program_act2)
+                                if((port_out_act1.connectsTo == port_in_act2.connectsTo)):
+                                    derivation.append(program_act1)
+                                    derivation.append(program_act2)
                                     
-                                    for port_out_act2 in program_act2.hasOutPort: 
+                                    for port_out_act2 in program_act2.hasOutPort:
                                         for port_in_act3 in program_act3.hasInPort:
-                                        
                                             if((port_out_act2.connectsTo == port_in_act3.connectsTo)):
                                                 derivation.append(program_act3)
-                                            
                                             for port_out_act3 in program_act3.hasOutPort: 
                                                 for port_in_act4 in program_act4.hasInPort:
-
                                                     if((port_in_act4.connectsTo == port_out_act3.connectsTo)):
                                                         derivation.append(program_act4)
 
@@ -143,15 +142,31 @@ def derivations():
                                                             if((port_out_act4.connectsTo == port_in_act5.connectsTo)):
                                                                 derivation.append(program_act5)
                                                                 derivation.insert(0, i)
+                                                                #o append i é feito dessa forma para adicionar na cabeça da lista
+                                                                # o id da derivation e mostrar na tabela
                                                     i = i+1
                                                     derivations.append(derivation)
-                                                    indice.append(i)
                                                     derivation = []
-                                                # print(program_act2, port_act2, port_act2.connectsTo, port_act3.connectsTo, port_act3, program_act3)
-    print(derivations)
-                
+    # a lista 'derivations' é sobre as derivações de programas
+    # print(derivations)
+    attributesByAct = []
+    attributes = []
+    for programs_act1 in act1:
+        for port in programs_act1.hasOutPort:
+            for ds in port.hasDefaultParam:
+                # print(ds.composedBy)
+                attributes.append(ds.composedBy)
+    attributesByAct.append(attributes)
+    attributes = []
 
-    return render_template("derivations.html", result = result_replaced, objectList = line, derivations = derivations, indice = indice)
+    for programs_act2 in act2:
+        for port in programs_act2.hasOutPort:
+            for ds in port.hasDefaultParam:
+                # print(ds.composedBy)
+                attributes.append(ds.composedBy)
+    attributesByAct.append(attributes)
+    print(attributesByAct)
+    return render_template("derivations.html", result = result_replaced, objectList = line, derivations = derivations, count = len(derivations))
 
 def ontologyStructure():
     onto = get_ontology("ontoexpline.owl")

@@ -1,19 +1,21 @@
 {%extends "base.html"%}
 {%block title%}Home Page{%endblock%}
 {%block content%}
-<div class="container" >
+<div class="container">
     <div class="row" style="padding-top: 2%;">
         <div class="col-2">
             <div class="list-group" id="list-tab" role="tablist" style="font-size: 10pt;">
-                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
-                    By Alignment
-                    <span class="badge badge-primary badge-pill" style="float: right">9</span>
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                    href="#list-home" role="tab" aria-controls="home">
+                    By Programs
+                    <span class="badge badge-primary badge-pill" style="float: right">{{count}}</span>
                 </a>
-                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                <!-- <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
                     By Tree 
                     <span class="badge badge-primary badge-pill" style="float: right">5</span>
-                </a>
-                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                </a> -->
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                    href="#list-messages" role="tab" aria-controls="messages">
                     By Attributes
                     <span class="badge badge-primary badge-pill" style="float: right">2</span>
                 </a>
@@ -22,50 +24,59 @@
         <div class="col-10">
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                    <strong>Information about derivations Alignment-Programs-Based:</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum, mi quis ornare pretium, 
-                    lacus felis faucibus tortor, pellentesque dictum sem odio id neque. Suspendisse gravida orci et orci 
-                    ornare, ac facilisis est ultrices. In congue lorem ligula, nec cursus nisi hendrerit in. 
-                    Cras sit amet erat ante.</p>
+                    <strong>Informations about derivations Programs-Based:</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum, mi quis ornare pretium,
+                        lacus felis faucibus tortor, pellentesque dictum sem odio id neque. Suspendisse gravida orci et
+                        orci
+                        ornare, ac facilisis est ultrices. In congue lorem ligula, nec cursus nisi hendrerit in.
+                        Cras sit amet erat ante.</p>
                     <table class="table table-hover" style="font-size: 8pt;">
                         <thead>
-                          <tr>
-                            <th scope="col">Derivation</th>
-                            {%for item in objectList%}
-                            <th scope="col">{{item.getName()}} <br> ({{item.getActivityType()}})</th>
-                            {%endfor%}
-                          </tr>
+                            <tr>
+                                <th scope="col">Derivation</th>
+                                {%for item in objectList%}
+                                <th scope="col">{{item.getName()}} <br> ({{item.getActivityType()}})</th>
+                                {%endfor%}
+                            </tr>
                         </thead>
                         <tbody>
-                            
                             {%for item in derivations%}
                             <tr>
-                               
                                 {%for i in item%}
                                 <td>
-                                    {{i}}<br> 
+                                    {{i}}<br>
                                 </td>
                                 {%endfor%}
                             </tr>
                             {%endfor%}
-                            
                         </tbody>
-                      </table>
+                    </table>
 
                 </div>
-                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                <!-- <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
                     <strong>Information about derivations Tree-Generators-Programs-Based:</strong>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum, mi quis ornare pretium, 
                         lacus felis faucibus tortor, pellentesque dictum sem odio id neque. Suspendisse gravida orci et orci 
                         ornare, ac facilisis est ultrices. In congue lorem ligula, nec cursus nisi hendrerit in. 
                         Cras sit amet erat ante.</p>
-                </div>
+                </div> -->
                 <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
                     <strong>Information about derivations Attributes-Based:</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum, mi quis ornare pretium, 
-                        lacus felis faucibus tortor, pellentesque dictum sem odio id neque. Suspendisse gravida orci et orci 
-                        ornare, ac facilisis est ultrices. In congue lorem ligula, nec cursus nisi hendrerit in. 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum, mi quis ornare pretium,
+                        lacus felis faucibus tortor, pellentesque dictum sem odio id neque. Suspendisse gravida orci et
+                        orci
+                        ornare, ac facilisis est ultrices. In congue lorem ligula, nec cursus nisi hendrerit in.
                         Cras sit amet erat ante.</p>
+                        <div class="row">
+                            {%for i in objectList%}
+                                <div class="card" style="width: 12.5rem; margin:0.1rem;">
+                                    <div class="card-body" >
+                                        <div style="font-size: 8pt;">{{i.getName()}}</div>
+                                    </div>
+                                </div>
+                            {%endfor%}
+                        </div>
+                        
                 </div>
             </div>
         </div>

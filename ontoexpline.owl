@@ -133,7 +133,7 @@
         <ObjectProperty IRI="#belongsTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#connectsTo"/>
@@ -975,7 +975,7 @@
         <NamedIndividual IRI="#r1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Aln_File"/>
         <NamedIndividual IRI="#Evolutive_Model"/>
     </ObjectPropertyAssertion>
@@ -995,122 +995,122 @@
         <NamedIndividual IRI="#AA_Alignment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_inputSequence"/>
         <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_inputSequence"/>
         <NamedIndividual IRI="#Input_Sequence"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputClustalw"/>
         <NamedIndividual IRI="#Aligned_Sequence"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputClustalw"/>
         <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMafft"/>
         <NamedIndividual IRI="#Aligned_Sequence"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMafft"/>
         <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputModelGenerator"/>
         <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMrBayes"/>
         <NamedIndividual IRI="#Alpha"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMrBayes"/>
         <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMrBayes"/>
         <NamedIndividual IRI="#Kappa"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMrBayes"/>
         <NamedIndividual IRI="#Likehood"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMrBayes"/>
         <NamedIndividual IRI="#Tree"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMuscle"/>
         <NamedIndividual IRI="#Aligned_Sequence"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMuscle"/>
         <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputRaxml"/>
         <NamedIndividual IRI="#Base_Frequencies"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputRaxml"/>
         <NamedIndividual IRI="#Best_Tree"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputRaxml"/>
         <NamedIndividual IRI="#Gamma_Based_Likehood"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputRaxml"/>
         <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputRaxml"/>
         <NamedIndividual IRI="#Tree"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputReadSeq"/>
         <NamedIndividual IRI="#Aln_File"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputReadSeq"/>
         <NamedIndividual IRI="#Fasta_file"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputReadSeq"/>
         <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputRemovePipe"/>
         <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputRemovePipe"/>
         <NamedIndividual IRI="#Validated_Sequence"/>
     </ObjectPropertyAssertion>
@@ -1399,7 +1399,7 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <Class IRI="#Collection"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1491,7 +1491,7 @@
         <Class IRI="#Execution"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#composed"/>
+        <ObjectProperty IRI="#composedBy"/>
         <Class IRI="#Attribute"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
