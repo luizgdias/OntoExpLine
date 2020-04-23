@@ -283,16 +283,43 @@
         <NamedIndividual IRI="#Alpha"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Auto"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Base_Frequencies"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Best_Tree"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CASE"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Clustalw"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#DNAMATRIX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ds_inputMuscle"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Ds_inputSequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ds_input_Raxml"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ds_input_ReadSeq"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Ds_outputClustalw"/>
@@ -319,25 +346,55 @@
         <NamedIndividual IRI="#Ds_outputRemovePipe"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ENDGAPS"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Evolutive_Model"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Fasta_file"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#GAPDIST"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GAPEXT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GAPOPEN"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Gamma_Based_Likehood"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ID"/>
+        <NamedIndividual IRI="#HGAPRESIDUES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#INTERACTIVE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ITERATION"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Input_Sequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KTUPLE"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Kappa"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Likehood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MATRIX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MAXDIV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MAXSEQLEN"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Mafft"/>
@@ -352,6 +409,54 @@
         <NamedIndividual IRI="#Muscle"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#NEGATIVE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NEWTREE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NOHGAP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NOPGAP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NOWEIGHTS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NUMITER"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OUTFILE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OUTORDER"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OUTPUT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PAIRGAP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PWGAPEXT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PWGAPOPEN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PWMATRIX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QUICKTREE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QUIET"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RANGE"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Raxml"/>
     </Declaration>
     <Declaration>
@@ -361,7 +466,28 @@
         <NamedIndividual IRI="#Remove_pipe"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#SCORE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SEQNOS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SEQNO_RANGE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#STATS"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SciPhy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TOPDIAGS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TRANSWEIGHT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TYPE"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Time"/>
@@ -370,7 +496,16 @@
         <NamedIndividual IRI="#Tree"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#USETREE"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Validated_Sequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WINDOW"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ancestralSequenceCandidatesFileName"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#att_a1"/>
@@ -380,6 +515,33 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#att_b1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#autoFC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#autoMR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#autoMRE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#autoMRE_IGN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#basename"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#binaryConstraintTree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#binaryModelParamFile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bootstrapRandomNumberSeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#branchsupport"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ch1"/>
@@ -392,6 +554,45 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ch4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#criterion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dophyml"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dpparttree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#excludeFileName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fastapair"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fastaparttree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genafpair"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#globalpair"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#groupingFileName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#groupsize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#in1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#in2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#in_port_clustalw"/>
@@ -418,6 +619,57 @@
         <NamedIndividual IRI="#in_port_removepipe"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#initialRearrangementSetting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#likelihoodEpsilon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#localpair"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#maxhours"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#maxiterate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#maxiters"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#memsave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mesquite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#multipleModelFileName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#multipleTreesFile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ncat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#njplot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nofft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#noscore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#numberOfCategories"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#numberOfRuns"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#numberOfThreads"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#out_port_clustalw"/>
     </Declaration>
     <Declaration>
@@ -442,6 +694,33 @@
         <NamedIndividual IRI="#out_port_removepipe"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#outputDirectory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#outputFileName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#parsimonyRandomSeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#partsize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#parttree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#placementThreshold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#proteinModel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#quartetGroupingFileName"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#r1"/>
     </Declaration>
     <Declaration>
@@ -452,6 +731,63 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#r4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#randomize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rapidBootstrapRandomNumberSeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#restarts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#retree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#searchtree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#secondaryStructureFile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#secondaryStructureSubstModel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sequenceFileName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#silent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#slidingWindowSize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#substitutionModel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#trials"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#userStartingTree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wcCriterionThreshold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#weightFileName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#weighti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#6merpair"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#no­bfgs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#no­seq­check"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#Abstract_activity"/>
@@ -676,11 +1012,19 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#Auto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
         <NamedIndividual IRI="#Base_Frequencies"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
         <NamedIndividual IRI="#Best_Tree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#CASE"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Program"/>
@@ -691,8 +1035,36 @@
         <NamedIndividual IRI="#Clustalw"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#DNAMATRIX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collection"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collection"/>
+        <NamedIndividual IRI="#Ds_inputMuscle"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Collection"/>
         <NamedIndividual IRI="#Ds_inputSequence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collection"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collection"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collection"/>
+        <NamedIndividual IRI="#Ds_input_Raxml"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collection"/>
+        <NamedIndividual IRI="#Ds_input_ReadSeq"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Collection"/>
@@ -728,6 +1100,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#ENDGAPS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
         <NamedIndividual IRI="#Evolutive_Model"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -736,15 +1112,39 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#GAPDIST"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#GAPEXT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#GAPOPEN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
         <NamedIndividual IRI="#Gamma_Based_Likehood"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
-        <NamedIndividual IRI="#ID"/>
+        <NamedIndividual IRI="#HGAPRESIDUES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#INTERACTIVE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#ITERATION"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
         <NamedIndividual IRI="#Input_Sequence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#KTUPLE"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
@@ -753,6 +1153,18 @@
     <ClassAssertion>
         <Class IRI="#Attribute"/>
         <NamedIndividual IRI="#Likehood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#MATRIX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#MAXDIV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#MAXSEQLEN"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Program"/>
@@ -787,6 +1199,70 @@
         <NamedIndividual IRI="#Muscle"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#NEGATIVE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#NEWTREE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#NOHGAP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#NOPGAP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#NOWEIGHTS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#NUMITER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#OUTFILE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#OUTORDER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#OUTPUT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#PAIRGAP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#PWGAPEXT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#PWGAPOPEN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#PWMATRIX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#QUIET"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#RANGE"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Phylogenetic_tree_generation"/>
         <NamedIndividual IRI="#Raxml"/>
     </ClassAssertion>
@@ -811,8 +1287,36 @@
         <NamedIndividual IRI="#Remove_pipe"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#SCORE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#SEQNOS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#SEQNO_RANGE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#STATS"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Workflow"/>
         <NamedIndividual IRI="#SciPhy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#TOPDIAGS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#TRANSWEIGHT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#TYPE"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
@@ -824,7 +1328,19 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#USETREE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
         <NamedIndividual IRI="#Validated_Sequence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#WINDOW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#ancestralSequenceCandidatesFileName"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Attribute"/>
@@ -837,6 +1353,42 @@
     <ClassAssertion>
         <Class IRI="#Attribute"/>
         <NamedIndividual IRI="#att_b1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#autoFC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#autoMR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#autoMRE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#autoMRE_IGN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#basename"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#binaryConstraintTree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#binaryModelParamFile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#bootstrapRandomNumberSeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#branchsupport"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Channel"/>
@@ -853,6 +1405,58 @@
     <ClassAssertion>
         <Class IRI="#Channel"/>
         <NamedIndividual IRI="#ch4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#criterion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#dophyml"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#dpparttree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#excludeFileName"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#fastapair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#fastaparttree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#fft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#genafpair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#globalpair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#groupingFileName"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#groupsize"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#in1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#in2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Port"/>
@@ -887,6 +1491,74 @@
         <NamedIndividual IRI="#in_port_removepipe"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#initialRearrangementSetting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#likelihoodEpsilon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#localpair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#maxhours"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#maxiterate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#maxiters"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#memsave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#mesquite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#multipleModelFileName"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#multipleTreesFile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#ncat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#njplot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#nofft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#noscore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#numberOfCategories"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#numberOfRuns"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#numberOfThreads"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Port"/>
         <NamedIndividual IRI="#out_port_clustalw"/>
     </ClassAssertion>
@@ -919,6 +1591,42 @@
         <NamedIndividual IRI="#out_port_removepipe"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#outputDirectory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#outputFileName"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#parsimonyRandomSeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#partsize"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#parttree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#placementThreshold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#profile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#proteinModel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#quartetGroupingFileName"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Relation"/>
         <NamedIndividual IRI="#r1"/>
     </ClassAssertion>
@@ -933,6 +1641,82 @@
     <ClassAssertion>
         <Class IRI="#Relation"/>
         <NamedIndividual IRI="#r4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#randomize"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#rapidBootstrapRandomNumberSeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#restarts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#retree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#searchtree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#secondaryStructureFile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#secondaryStructureSubstModel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#sequenceFileName"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#silent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#slidingWindowSize"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#substitutionModel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#trials"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#userStartingTree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#wcCriterionThreshold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#weightFileName"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#weighti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#6merpair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#no­bfgs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attribute"/>
+        <NamedIndividual IRI="#no­seq­check"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInputRelation"/>
@@ -996,8 +1780,118 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composedBy"/>
-        <NamedIndividual IRI="#Ds_inputSequence"/>
-        <NamedIndividual IRI="#ID"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#Auto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#Validated_Sequence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#dpparttree"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#fastapair"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#fastaparttree"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#fft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#genafpair"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#globalpair"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#groupsize"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#localpair"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#maxiterate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#memsave"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#nofft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#noscore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#partsize"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#parttree"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#retree"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
+        <NamedIndividual IRI="#weighti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMuscle"/>
+        <NamedIndividual IRI="#Validated_Sequence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMuscle"/>
+        <NamedIndividual IRI="#in1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMuscle"/>
+        <NamedIndividual IRI="#in2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMuscle"/>
+        <NamedIndividual IRI="#maxhours"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_inputMuscle"/>
+        <NamedIndividual IRI="#maxiters"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composedBy"/>
@@ -1006,38 +1900,168 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composedBy"/>
-        <NamedIndividual IRI="#Ds_outputClustalw"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#CASE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#INTERACTIVE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#KTUPLE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#MAXSEQLEN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#NEGATIVE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#OUTFILE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#OUTORDER"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#OUTPUT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#PAIRGAP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#QUIET"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#RANGE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#SEQNOS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#SEQNO_RANGE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#STATS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#TOPDIAGS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#TYPE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
+        <NamedIndividual IRI="#WINDOW"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+        <NamedIndividual IRI="#basename"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+        <NamedIndividual IRI="#branchsupport"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+        <NamedIndividual IRI="#criterion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+        <NamedIndividual IRI="#dophyml"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+        <NamedIndividual IRI="#ncat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+        <NamedIndividual IRI="#njplot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+        <NamedIndividual IRI="#randomize"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+        <NamedIndividual IRI="#restarts"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+        <NamedIndividual IRI="#searchtree"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
+        <NamedIndividual IRI="#trials"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_Raxml"/>
+        <NamedIndividual IRI="#sequenceFileName"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#Ds_input_ReadSeq"/>
         <NamedIndividual IRI="#Aligned_Sequence"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputClustalw"/>
-        <NamedIndividual IRI="#ID"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composedBy"/>
-        <NamedIndividual IRI="#Ds_outputMafft"/>
         <NamedIndividual IRI="#Aligned_Sequence"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMafft"/>
-        <NamedIndividual IRI="#ID"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composedBy"/>
-        <NamedIndividual IRI="#Ds_outputModelGenerator"/>
-        <NamedIndividual IRI="#ID"/>
+        <NamedIndividual IRI="#Aligned_Sequence"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputMrBayes"/>
         <NamedIndividual IRI="#Alpha"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composedBy"/>
-        <NamedIndividual IRI="#Ds_outputMrBayes"/>
-        <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composedBy"/>
@@ -1061,11 +2085,6 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composedBy"/>
-        <NamedIndividual IRI="#Ds_outputMuscle"/>
-        <NamedIndividual IRI="#ID"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputRaxml"/>
         <NamedIndividual IRI="#Base_Frequencies"/>
     </ObjectPropertyAssertion>
@@ -1082,11 +2101,6 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputRaxml"/>
-        <NamedIndividual IRI="#ID"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composedBy"/>
-        <NamedIndividual IRI="#Ds_outputRaxml"/>
         <NamedIndividual IRI="#Tree"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -1098,16 +2112,6 @@
         <ObjectProperty IRI="#composedBy"/>
         <NamedIndividual IRI="#Ds_outputReadSeq"/>
         <NamedIndividual IRI="#Fasta_file"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composedBy"/>
-        <NamedIndividual IRI="#Ds_outputReadSeq"/>
-        <NamedIndividual IRI="#ID"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#composedBy"/>
-        <NamedIndividual IRI="#Ds_outputRemovePipe"/>
-        <NamedIndividual IRI="#ID"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#composedBy"/>
@@ -1175,6 +2179,146 @@
         <NamedIndividual IRI="#AA_Alignment"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#ancestralSequenceCandidatesFileName"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#autoFC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#autoMR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#autoMRE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#autoMRE_IGN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#binaryConstraintTree"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#groupingFileName"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#likelihoodEpsilon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#mesquite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#multipleModelFileName"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#numberOfCategories"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#numberOfRuns"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#numberOfThreads"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#outputDirectory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#outputFileName"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#parsimonyRandomSeed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#placementThreshold"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#proteinModel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#secondaryStructureFile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#secondaryStructureSubstModel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#sequenceFileName"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#silent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#slidingWindowSize"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#userStartingTree"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#wcCriterionThreshold"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#weightFileName"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#no­bfgs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composedBy"/>
+        <NamedIndividual IRI="#QUICKTREE"/>
+        <NamedIndividual IRI="#no­seq­check"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasInPort"/>
         <NamedIndividual IRI="#Raxml"/>
         <NamedIndividual IRI="#in_port_raxml"/>
@@ -1227,7 +2371,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasDefaultParam"/>
         <NamedIndividual IRI="#in_port_clustalw"/>
-        <NamedIndividual IRI="#Ds_outputRemovePipe"/>
+        <NamedIndividual IRI="#Ds_input_Clustalw"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#connectsTo"/>
@@ -1237,7 +2381,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasDefaultParam"/>
         <NamedIndividual IRI="#in_port_mafft"/>
-        <NamedIndividual IRI="#Ds_outputRemovePipe"/>
+        <NamedIndividual IRI="#Ds_inputMafft"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#connectsTo"/>
@@ -1247,7 +2391,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasDefaultParam"/>
         <NamedIndividual IRI="#in_port_modelgen"/>
-        <NamedIndividual IRI="#Ds_outputReadSeq"/>
+        <NamedIndividual IRI="#Ds_input_ModelGenerator"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#connectsTo"/>
@@ -1267,7 +2411,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasDefaultParam"/>
         <NamedIndividual IRI="#in_port_muscle"/>
-        <NamedIndividual IRI="#Ds_outputRemovePipe"/>
+        <NamedIndividual IRI="#Ds_inputMuscle"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#connectsTo"/>
@@ -1277,7 +2421,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasDefaultParam"/>
         <NamedIndividual IRI="#in_port_raxml"/>
-        <NamedIndividual IRI="#Ds_outputModelGenerator"/>
+        <NamedIndividual IRI="#Ds_input_Raxml"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#connectsTo"/>
@@ -1287,17 +2431,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasDefaultParam"/>
         <NamedIndividual IRI="#in_port_readseq"/>
-        <NamedIndividual IRI="#Ds_outputClustalw"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasDefaultParam"/>
-        <NamedIndividual IRI="#in_port_readseq"/>
-        <NamedIndividual IRI="#Ds_outputMafft"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasDefaultParam"/>
-        <NamedIndividual IRI="#in_port_readseq"/>
-        <NamedIndividual IRI="#Ds_outputMuscle"/>
+        <NamedIndividual IRI="#Ds_input_ReadSeq"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasDefaultParam"/>
@@ -1636,6 +2770,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CASE</IRI>
+        <Literal>CASE        :LOWER or UPPER (for GDE output only)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Channel</IRI>
         <Literal>Encapsulates experiment line relations and connects abstract activities.</Literal>
     </AnnotationAssertion>
@@ -1671,6 +2810,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DNAMATRIX</IRI>
+        <Literal>DNAMATRIX=    :DNA weight matrix=IUB, CLUSTALW or filename</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Data</IRI>
         <Literal>Representa a unidade básica de informação consumida ou produzida por um programa. Vários itens de dados podem ser agrupados em uma coleção.</Literal>
     </AnnotationAssertion>
@@ -1678,6 +2822,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Document</IRI>
         <Literal>A Document represents a body of information produced as a result of an Execution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ENDGAPS</IRI>
+        <Literal>ENDGAPS       :no end gap separation pen.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1711,6 +2860,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GAPDIST</IRI>
+        <Literal>GAPDIST=n     :gap separation pen. range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GAPEXT</IRI>
+        <Literal>GAPEXT=f      :gap extension penalty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GAPOPEN</IRI>
+        <Literal>GAPOPEN=f     :gap opening penalty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Generation</IRI>
         <Literal>É a conclusão da produção de uma nova entidade por uma atividade.</Literal>
     </AnnotationAssertion>
@@ -1723,6 +2887,106 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Generation</IRI>
         <Literal>hadOutPort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HGAPRESIDUES</IRI>
+        <Literal>HGAPRESIDUES= :list hydrophilic res.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#INTERACTIVE</IRI>
+        <Literal>read command line, then enter normal interactive menus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ITERATION</IRI>
+        <Literal>NONE or TREE or ALIGNMENT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KTUPLE</IRI>
+        <Literal>KTUPLE=n    :word size</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MATRIX</IRI>
+        <Literal>MATRIX=       :Protein weight matrix=BLOSUM, PAM, GONNET, ID or filename</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MAXDIV</IRI>
+        <Literal>-MAXDIV=n      :% ident. for delay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MAXSEQLEN</IRI>
+        <Literal>MAXSEQLEN=n :maximum allowed input sequence length</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NEGATIVE</IRI>
+        <Literal>protein alignment with negative values in matrix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NEWTREE</IRI>
+        <Literal>NEWTREE=      :file for new guide tree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NOHGAP</IRI>
+        <Literal>NOHGAP        :hydrophilic gaps off</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NOPGAP</IRI>
+        <Literal>NOPGAP        :residue-specific gaps off</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NOWEIGHTS</IRI>
+        <Literal>disable sequence weighting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NUMITER</IRI>
+        <Literal>maximum number of iterations to perform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OUTFILE</IRI>
+        <Literal>sequence alignment file name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OUTORDER</IRI>
+        <Literal>OUTORDER=   :INPUT or ALIGNED</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OUTPUT</IRI>
+        <Literal>OUTPUT=     :GCG, GDE, PHYLIP, PIR or NEXUS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PAIRGAP</IRI>
+        <Literal>PAIRGAP=n   :gap penalty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PWGAPEXT</IRI>
+        <Literal>-PWGAPEXT=f   :gap opening penalty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PWGAPOPEN</IRI>
+        <Literal>-PWGAPOPEN=f  :gap opening penalty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PWMATRIX</IRI>
+        <Literal>PWMATRIX=    :Protein weight matrix=BLOSUM, PAM, GONNET, ID or filename</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1786,6 +3050,61 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#QUICKTREE</IRI>
+        <Literal>use FAST algorithm for the alignment guide tree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#QUIET</IRI>
+        <Literal>QUIET       :Reduce console output to minimum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RANGE</IRI>
+        <Literal>RANGE=m,n   :sequence range to write starting m to m+n</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SCORE</IRI>
+        <Literal>SCORE       :PERCENT or ABSOLUTE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SEQNOS</IRI>
+        <Literal>SEQNOS=     :OFF or ON (for Clustal output only)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SEQNO_RANGE</IRI>
+        <Literal>SEQNO_RANGE=:OFF or ON (NEW: for all output formats)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#STATS</IRI>
+        <Literal>STATS=      :Log some alignents statistics to file</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TOPDIAGS</IRI>
+        <Literal>TOPDIAGS=n  :number of best diags.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TRANSWEIGHT</IRI>
+        <Literal>transitions weighting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TYPE</IRI>
+        <Literal>TYPE=       :PROTEIN or DNA sequences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#USETREE</IRI>
+        <Literal>USETREE=      :file for old guide tree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Usage</IRI>
         <Literal>Indica a utilização de uma entidade por uma atividade.</Literal>
     </AnnotationAssertion>
@@ -1811,6 +3130,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WINDOW</IRI>
+        <Literal>WINDOW=n    :window around best diags.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Workflow</IRI>
         <Literal>É um conjunto de programas conectados, que se destina a representar um experimento computacional na sua totalidade.</Literal>
     </AnnotationAssertion>
@@ -1818,6 +3142,56 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Workflow</IRI>
         <Literal>wasDerivedFrom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#basename</IRI>
+        <Literal>Base name for output files. String.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#branchsupport</IRI>
+        <Literal>PhyML method for estimating support of branches. List. Allowed Values: none	(none); bootstrap (bootstrap); sh (SH-like likelihood ratio test); alrt(approximate; likelihood ratio test); chi2 (likelihood ratio test using chi2); bayes (Bayesian-like transformation of likelihood ratio test)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#criterion</IRI>
+        <Literal>Criterion for selecting model used by PhyML. List. Allowed Values: 1	(Akaike Information Criterion 1); 2	(Akaike Information Criterion 2); 3 (Bayesian Information Criterion)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dophyml</IRI>
+        <Literal>Automatically start a PhyML run on the input multiple sequence alignment using one of the models selected by ModelGenerator (see on-line manual). Toggle. Allowed Values: Toggle value Yes/No.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ncat</IRI>
+        <Literal>Number of substitution rate categories. Integer. Allowed Values: Integer 1 or more.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#njplot</IRI>
+        <Literal>Open PhyML treefile using NJplot. Boolean. usage:-[no/yes]njplot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#randomize</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#restarts</IRI>
+        <Literal>Number of random restarts. Only performed if you put -randomize. Integer. Allowed Values: Integer 1 or more.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#searchtree</IRI>
+        <Literal>PhyML method for modifying tree topology while heuristically searching through tree space. List. Allowed Values: NNI (Nearest Neighbour Interchange); SPR	(Subtree Pruning and Regrafting); best(NNI + SPR)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#trials</IRI>
+        <Literal>Number of trials for bootstrap. Integer. Allowed Values: Integer 1 or more.</Literal>
     </AnnotationAssertion>
 </Ontology>
 

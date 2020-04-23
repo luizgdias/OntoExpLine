@@ -152,21 +152,45 @@ def derivations():
     attributesByAct = []
     attributes = []
     for programs_act1 in act1:
-        for port in programs_act1.hasOutPort:
-            for ds in port.hasDefaultParam:
+        for port in programs_act1.hasInPort:
+            for at in port.hasDefaultParam:
                 # print(ds.composedBy)
-                attributes.append(ds.composedBy)
+                attributes.append(at)
     attributesByAct.append(attributes)
     attributes = []
 
     for programs_act2 in act2:
-        for port in programs_act2.hasOutPort:
-            for ds in port.hasDefaultParam:
-                # print(ds.composedBy)
-                attributes.append(ds.composedBy)
+        for port in programs_act2.hasInPort:
+            for at in port.hasDefaultParam:
+                attributes.append(at)
+    attributesByAct.append(attributes)
+    # print(attributesByAct)
+    attributes = []
+
+    for programs_act3 in act3:
+        for port in programs_act3.hasInPort:
+            for at in port.hasDefaultParam:
+                attributes.append(at)
+    attributesByAct.append(attributes)
+    # print(attributesByAct)
+    attributes = []
+
+    for programs_act4 in act4:
+        for port in programs_act4.hasInPort:
+            for at in port.hasDefaultParam:
+                attributes.append(at)
     attributesByAct.append(attributes)
     print(attributesByAct)
-    return render_template("derivations.html", result = result_replaced, objectList = line, derivations = derivations, count = len(derivations))
+    attributes = []
+
+    for programs_act5 in act5:
+        for port in programs_act5.hasInPort:
+            for at in port.hasDefaultParam:
+                attributes.append(at)
+    attributesByAct.append(attributes)
+    print(attributesByAct)
+    attributes = []
+    return render_template("derivations.html", result = result_replaced, objectList = line, derivations = derivations, count = len(derivations), attributesByAct = attributesByAct)
 
 def ontologyStructure():
     onto = get_ontology("ontoexpline.owl")
