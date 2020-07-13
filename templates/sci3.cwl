@@ -131,26 +131,26 @@ $graph:
         in:
           validated_sequence: validation/validated
           # output: { default: "a.out" }
-      out: [aligned_sequence]
+        out: [aligned_sequence]
 
       evolutive_model:
         run: "#model_gen"
         in:
           aligned_sequence: alignment/aligned_sequence
           # output: { default: "a.out" }
-      out: [ev_model]
+        out: [ev_model]
 
       converter:
         run: "#readseq"
         in:
           aligned_sequence: alignment/aligned_sequence
           # output: { default: "a.out" }
-      out: [converted_sequence]
+        out: [converted_sequence]
 
       tree_generator:
         run: "#raxml"
         in:
           objects: [alignment/aligned_sequence, evolutive_model/ev_model]
           # output: { default: "a.out" }
-      out: [tree]
+        out: [tree]
 
