@@ -2,7 +2,32 @@
 
 cwlVersion: v1.0
 $graph:
-- id: compile
+- id: remove_pipe
+  class: CommandLineTool
+  inputs:
+    src:
+      type: File
+      inputBinding: {}
+    object:
+      type: string
+      inputBinding:
+          prefix: "-o"
+  outputs:
+    validated:
+      type: File
+      outputBinding:
+        glob: $(inputs.object)
+  baseCommand: gcc
+  arguments:
+    - "-c"
+    - "-Wall"
+# ##########################################
+
+#!/usr/bin/env cwl-runner
+
+cwlVersion: v1.0
+$graph:
+- id: mafft
   class: CommandLineTool
   inputs:
     src:
@@ -21,25 +46,82 @@ $graph:
   arguments:
     - "-c"
     - "-Wall"
+# ##########################################
 
-- id: link
+#!/usr/bin/env cwl-runner
+
+cwlVersion: v1.0
+$graph:
+- id: readseq
   class: CommandLineTool
   inputs:
-    objects:
-      type:  File[]
-      inputBinding:
-        position: 2
-    output:
+    src:
+      type: File
+      inputBinding: {}
+    object:
       type: string
       inputBinding:
-          position: 1
           prefix: "-o"
   outputs:
-    executable:
+    compiled:
       type: File
       outputBinding:
-          glob: $(inputs.output)
+        glob: $(inputs.object)
   baseCommand: gcc
+  arguments:
+    - "-c"
+    - "-Wall"
+# ##########################################
+
+#!/usr/bin/env cwl-runner
+
+cwlVersion: v1.0
+$graph:
+- id: model_gen
+  class: CommandLineTool
+  inputs:
+    src:
+      type: File
+      inputBinding: {}
+    object:
+      type: string
+      inputBinding:
+          prefix: "-o"
+  outputs:
+    compiled:
+      type: File
+      outputBinding:
+        glob: $(inputs.object)
+  baseCommand: gcc
+  arguments:
+    - "-c"
+    - "-Wall"
+# ##########################################
+
+#!/usr/bin/env cwl-runner
+
+cwlVersion: v1.0
+$graph:
+- id: raxml
+  class: CommandLineTool
+  inputs:
+    src:
+      type: File
+      inputBinding: {}
+    object:
+      type: string
+      inputBinding:
+          prefix: "-o"
+  outputs:
+    compiled:
+      type: File
+      outputBinding:
+        glob: $(inputs.object)
+  baseCommand: gcc
+  arguments:
+    - "-c"
+    - "-Wall"
+# ##########################################
 
 - id: main
   class: Workflow
@@ -50,33 +132,16 @@ $graph:
     - id: output
       type: File
       outputSource: linkobj/executable
-      
+
   steps:
-    compilesources-src1:
-      run: "#compile"
-      in:
-          src:
-            default:
-              class: File
-              location: source1.c
-              secondaryFiles:
-                - class: File
-                  location: source1.h
-          object: { default: "source1.o" }
-      out: [compiled]
-
-    compilesources-src2:
-      run: "#compile"
-      in:
-          src: { default: {class: File, location: "source2.c" } }
-          object: { default: "source2.o" }
-      out: [compiled]
-
-    linkobj:
-      run: "#link"
-      in:
-          objects: [compilesources-src1/compiled, compilesources-src2/compiled]
-          output: { default: "a.out" }
-      out: [executable]
-
-
+      validation:
+        run: "#remove_pipe"
+        in:
+            src:
+              default:
+                class: File
+                location: dir1.c
+                secondaryFiles:
+                  - class: File
+                    location: source1.h
+        out: [validated]
