@@ -1,5 +1,4 @@
 #!/usr/bin/env cwl-runner
-
 cwlVersion: v1.0
 $graph:
 - id: remove_pipe
@@ -23,10 +22,6 @@ $graph:
     - "-Wall"
 # ##########################################
 
-#!/usr/bin/env cwl-runner
-
-cwlVersion: v1.0
-$graph:
 - id: mafft
   class: CommandLineTool
   inputs:
@@ -48,10 +43,6 @@ $graph:
     - "-Wall"
 # ##########################################
 
-#!/usr/bin/env cwl-runner
-
-cwlVersion: v1.0
-$graph:
 - id: readseq
   class: CommandLineTool
   inputs:
@@ -73,10 +64,6 @@ $graph:
     - "-Wall"
 # ##########################################
 
-#!/usr/bin/env cwl-runner
-
-cwlVersion: v1.0
-$graph:
 - id: model_gen
   class: CommandLineTool
   inputs:
@@ -98,10 +85,6 @@ $graph:
     - "-Wall"
 # ##########################################
 
-#!/usr/bin/env cwl-runner
-
-cwlVersion: v1.0
-$graph:
 - id: raxml
   class: CommandLineTool
   inputs:
