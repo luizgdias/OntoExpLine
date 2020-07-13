@@ -76,7 +76,11 @@ $graph:
 - id: mrbayes
   class: CommandLineTool
   inputs:
-    objects:
+    converted_sequence:
+      type: File[]
+      inputBinding:
+          prefix: "-o"
+    evolutive_model:
       type: File[]
       inputBinding:
           prefix: "-o"
@@ -135,7 +139,8 @@ $graph:
       tree_generator:
         run: "#mrbayes"
         in:
-          objects: [converter/converted_sequence, evolutive_model/ev_model]
+          converted_sequence: converter/converted_sequence 
+          evolutive_model: evolutive_model/ev_model
           # output: { default: "a.out" }
         out: [tree]
 
