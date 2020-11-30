@@ -23,7 +23,6 @@ This section introduces OntoExpLine on a diagram representing its conceptual mod
 
 The ProveONE module is composed of three blocks that are used to link trace, workflow, and data instances.  The __trace representation__ components are responsible for aggregate execution data related to agents (such as users and software components), and resource usage. The __workflow representation__ block is composed of modules to describe and specify the workflow structure (such as programs, ports, and controllers).  On the other hand, the __data representation__ module aims to describe and relate the data instances consumed and produced during the workflow execution. The properties used to link the data instances are described in Table 1.
 
-<span font-size:4em>
 | Property | Domain | Range | Usage Example|
 |---|---|---|---|
 | provone:hasSubProgram | Program | Program |Program p1 *hasSubProgram* p3|
@@ -54,7 +53,7 @@ The ProveONE module is composed of three blocks that are used to link trace, wor
 | expline:hasRelation| AbstractActivity | Relation | AbstractActivity a1 *hasRelation* rel1 |
 | expline:hasMetadata| AbstractActivity/Program | Metadata | AbstractActivity a1 *hasMetadata* meta1 |
 | expline:composedBy| Collection | Attribute | Collection c1 *composedBy* att1 |
-</span>
+
 
 
 ## OntoExpLine Specification
